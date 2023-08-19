@@ -1,0 +1,151 @@
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('/task4/GothamPro.ttf');
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Gotham Pro';
+}
+
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: url('/task4/img/image_1.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.container--padding-vertical {
+    padding-left: 140px;
+    padding-right: 140px;
+}
+
+.container__title--width, .container__subtitle--width, .form--width, .form__inputs--width  {
+    width: 73%;
+}
+
+.container__title {
+    display: flex;
+    justify-content: start;
+    height: 73px;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 73.5px;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+}
+
+.container__subtitle {
+    display: flex;
+    justify-content: start;
+    height: 27px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+
+.container__subtitle--margin-bottom {
+    margin-bottom: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 40px;
+}
+.form__inputs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form__input {
+    padding: 10px;
+    height: 50px;
+    width: 340px;
+    border: 1px solid #ffffff; 
+    background-color: transparent; 
+    color: #ffffff; 
+    outline: none; 
+  
+}
+
+.form__input[type="text"]::placeholder {
+    padding-left: 46px;
+    height: 23px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+}
+.form__input[type="tel"] {
+    background-image: url('/task4/img/image 47.png');
+    background-repeat: no-repeat;
+    background-position: 10px center; 
+    padding-left: 40px; 
+}
+.form__input[type="tel"]::placeholder {
+    padding-left: 46px;
+    height: 23px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+}
+.form__input[type="email"]::placeholder {
+    padding-left: 46px;
+    height: 23px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+}
+
+.form-button-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; 
+    gap: 40px;
+    width: 100%;
+    margin-bottom: 20px; 
+}
+
+.form__button {
+    height: 66px;
+    width: 360px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #000;
+    cursor: pointer;
+}
+
+.container__agreement {
+    text-align: start;
+    font-size: 14px;
+    height: 51px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: #FFFFFF;
+    max-width: 720px;
+}
+
+
+.container__link {
+    color: #EB7979;
+    cursor: pointer;
+    text-decoration: underline;
+}
