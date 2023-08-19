@@ -1,0 +1,177 @@
+@font-face {
+    font-family: 'Proxima Nova'; 
+    src: url('/task2/Proxima Nova Font.otf'); 
+}
+@font-face {
+    font-family: 'Parangon 530C';
+    src: url('/task2/Parangon530C.ttf'); 
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.main-container {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-container {
+    width: calc(3 * 290px + 2 * 36px);/* 3 карточки + 2 отступа */
+    background-color: #FFFFFF;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px;
+
+}
+
+
+.product-card {
+    text-align: center;
+    width: 290px; 
+    height: 430px;
+    background-color: #C4C4C4;
+}
+
+.image-wrapper {
+    position: relative;
+   
+}
+.sales-label {
+    position:absolute;
+    height: 14px;
+    top : 15px;
+    left : 15px;
+    width: 81px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.sales-label--hot {
+    background-color: #A32018;
+}
+
+.sales-label--discount {
+    background-color: #E0CD1C;
+}
+.sales-label--new {
+    background-color: #087A28;
+}
+
+.sales-label-icon {
+    width: 12px; 
+    height: 12px;
+    margin-right: 4px; 
+}
+.sales-label-text {
+    height: 9px;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 9.3px;
+    text-align: left; 
+    color: #FFFFFF;
+    font-family: 'Parangon 530C';
+}
+
+.stock-status{
+    position: absolute;
+    width: 60px;
+    height: 14px;
+    top: 270px; 
+    left: 210px;
+    height: 14px; 
+    background-color: white;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.stock-status-arrow{
+    width: 2px;
+    height: 2px;
+    border: 1px solid #4F493F;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    transform: rotate(45deg);
+    text-align: center;
+    padding: 1px ;
+    margin-bottom: 3px;
+}
+.stock-status-text{
+    margin-left: 2px;
+    width: 38px;
+    height: 10px;
+    font-family: 'Proxima Nova';
+    font-weight: 400;
+    font-size: 6px;
+    line-height: 9.74px;
+    color: #4F493F;
+    
+}
+
+
+.product-description {
+    text-align: left;  
+}
+
+.product-section {
+    padding-left: 10px;
+    padding-top:15px;
+    padding-bottom: 10px;
+    height: 17px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.05px;
+    text-align: left; 
+    color: #6E6659;
+    font-family: 'Proxima Nova', sans-serif; 
+}
+.product-name {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    height: 22px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 21.92px;
+    text-align: left;
+    color: #264E58;
+    font-family: 'Proxima Nova', sans-serif; 
+}
+.product-articul {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    height: 18px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.05px;
+    text-align: left;
+    font-family: 'Proxima Nova', sans-serif; 
+    color: #A5A5A5;
+}
+.product-articul .product-articul-code{
+    color: #264E58;
+    font-weight: bold;
+}
+
+.product-price{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    height: 45px;
+    background-color: #C4C4C4 ;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17.05px;
+    text-align: left;
+    font-family: 'Proxima Nova', sans-serif; 
+    color: #A5A5A5;
+}
+.product-price .product-price-amount{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29.23px;
+    text-align: left;
+    font-family: 'Proxima Nova', sans-serif; 
+    color: #6E6659;
+}

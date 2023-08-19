@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="main-container main-container--margin-top ">
+        <div class="info-block">
+            <div class="info-block__period">Предыдущий период </div>
+            <label class="switch switch--margin-vertical">
+                <input type="checkbox" class="switch__checkbox switch__checkbox--hidden">
+                <span class="switch__slider"></span>
+            </label>
+            <div class="info-block__plan">План</div>
+        </div>
+
+        <div class="sales-title">Продажи</div>
+
+        <div class="sales-info">
+            <div class="sales-section">
+                <div class="sales-section__header">
+                    <div class="sales-section__text">Колличество проданных пицц</div>
+                    <div class="sales-section__line"></div>
+                </div>
+                <div class="sales-section__cards">
+                    <div class="card">
+                        <div class="diagram">
+                            <canvas id="myDoughnutChart1"></canvas>
+                        </div>
+                        <div class="total total--left-increace">
+                            <h6 class="total_count-text">335</h6>
+                            <p class="total__amount">шт.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="card">
+                        <div class="diagram">
+                            <canvas id="myDoughnutChart2"></canvas>
+                        </div>
+                        <div class="total">
+                            <h6 class="total_count-text">1 065</h6>
+                            <p class="total__amount">шт.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sales-section">
+                <div class="sales-section__header">
+                    <div class="sales-section__text">Выручка</div>
+                    <div class="sales-section__line"></div>
+                </div>
+                <div class="sales-section__cards">
+                    <div class="card">
+                        <div class="diagram">
+                            <canvas id="myDoughnutChart3"></canvas>
+                        </div>
+                        <div class="total">
+                            <h6 class="total_count-text">$ 130</h6>
+                            <p class="total__amount">млн.</p>
+                        </div>
+                        
+                    </div>
+                    <div class="card">
+                        <div class="diagram">
+                            <canvas id="myDoughnutChart4"></canvas>
+                        </div>
+                        <div class="total">
+                            <h6 class="total_count-text">$ 130</h6>
+                            <p class="total__amount">млн.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
