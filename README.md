@@ -6,13 +6,13 @@
 
 ## Скриншоты
 
-|                   |                                     | 
-| ------------------|:-----------------------------------:| 
-| Превое задание    | <img src="/assets/task1.png"         | 
-| Второе задание    | <img src="/assets/task2.png"         |  
-| Третье задание    | <img src="/assets/task3.png"         |    
-| Четвертое задание | <img src="/assets/task4.png"         |  
-| Пятое задание     | <img src="/assets/task5.png"         |  
+|                   |                                       | 
+| ------------------|:-------------------------------------:| 
+| Превое задание    | <img src="assets/task1.png">         | 
+| Второе задание    | <img src="assets/task2.png">         |  
+| Третье задание    | <img src="assets/task3.png">         |    
+| Четвертое задание | <img src="assets/task4.png">         |  
+| Пятое задание     | <img src="assets/task5.png">         |  
 
 
 
