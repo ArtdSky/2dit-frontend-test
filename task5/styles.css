@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'Commissioner';
+    src: url('/task5/Commissioner-VariableFont_FLAR\,VOLM\,slnt\,wght.ttf');
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    justify-content: center;
+    align-items: start;
+}
+
+.main-container--margin-top {
+    margin-top: 50px;
+    margin-left: 60px;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    height: 50px;
+}
+
+.info-block__period {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24.8;
+    color: #626262;
+}
+
+.info-block__plan {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24.8;
+    color: #626262;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 33px;
+    height: 16.5px;
+}
+
+.switch--margin-vertical {
+    margin-left: 13px;
+    margin-right: 13px;
+}
+
+.switch__checkbox--hidden {
+    visibility: hidden;
+}
+
+.switch__slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #E83D46;
+    transition: .4s;
+    border-radius: 16.5px;
+}
+
+.switch__slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    width: 12px;
+    left: 2px;
+    bottom: 2px;
+    background-color: yellow;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.switch__checkbox:checked+.switch__slider:before {
+    transform: translateX(13px);
+}
+
+
+.sales-title {
+    height: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Commissioner';
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 49px;
+    color: #262424;
+}
+
+.sales-info {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    width: 70%
+}
+
+.sales-section {
+    max-width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sales-section__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.sales-section__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24.8px;
+    color: #626262;
+}
+
+.sales-section__line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #E4DFD5;
+    margin-left: 20px;
+}
+
+.sales-section__cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.card {
+    width: 240px;
+    height: 360px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.diagram {
+    width: 100%;
+    height: 100%;
+}
+
+.total {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    left: 85px;
+    top: 140px;
+}
+.total--left-increace{
+    left: 100px;
+}
+
+.total_count-text {
+    font-weight: 600;
+    font-size: 38px;
+    line-height: 58.8px;
+    text-align: center;
+}
+
+
+.total_count-text,
+.total__amount {
+    margin: 0;
+}
+
+h2 {
+    margin-top: 0;
+    color: #333;
+}
